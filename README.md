@@ -2,7 +2,7 @@
 
 A full-stack Lead Management Application built with the MERN stack (MongoDB, Express, React, Node.js). Supports public lead capture, role-based authentication (Admin/Member), lead lifecycle tracking (status, assignment, notes, activity history), search/filter/pagination, and a complete REST API.
 
-**Live URL:** _[add your deployed frontend URL here after deployment]_
+**Live URL:** https://lead-management-system-vpan.onrender.com
 
 ---
 
@@ -81,7 +81,7 @@ Seed the first admin account:
 ```bash
 node utils/seedAdmin.js
 ```
-This creates `admin@leadsystem.com` / `ChangeMe123` — change this password after first login via the Profile page.
+This creates `admin@leadsystem.com` / `ChangeMe123` 
 
 Run the backend:
 ```bash
@@ -139,7 +139,7 @@ All permissions above are enforced **server-side** (middleware) as the source of
 ## API Documentation
 
 **Base URL (local):** `http://localhost:5000/api`
-**Base URL (production):** `<your deployed backend URL>/api`
+**Base URL (production):** `https://lead-management-backend-g68b.onrender.com/api`
 
 All authenticated endpoints require a valid JWT sent automatically via an httpOnly cookie (set on login). No `Authorization` header is used.
 
@@ -179,7 +179,7 @@ All authenticated endpoints require a valid JWT sent automatically via an httpOn
 **POST `/users`**
 ```json
 // Request body
-{ "name": "Jane Doe", "email": "jane@company.com", "password": "password123", "role": "member" }
+{ "name": "Jane Doe"", "email": "jane@company.com", "password": "12345678", "role": "member" }
 
 // 201 Response
 { "success": true, "user": { "id": "...", "name": "Jane Doe", "email": "jane@company.com", "role": "member" } }
@@ -295,8 +295,8 @@ All authenticated endpoints require a valid JWT sent automatically via an httpOn
 
 | Role | Email | Password |
 |---|---|---|
-| Admin | `<add after deployment>` | `<add after deployment>` |
-| Member | `<add after deployment>` | `<add after deployment>` |
+| Admin | `<admin@leadsystem.com >` | `<Changeme123>` |
+| Member | `<sumit@gmail.comt>` | `<12345678>` |
 
 ---
 
